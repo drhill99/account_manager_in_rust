@@ -32,8 +32,6 @@ impl BasicAccountMembers {
     //        it was is not advantageous to borrow or change ownership.
     // Debug - allows for "pretty" printing using {:?}
 #[derive(Serialize, Deserialize, Clone, Debug)]
-
-
     // account struct definition
 struct Account {
     id: i16,
@@ -338,6 +336,8 @@ fn check_for_json_folders() {
     }
 
 }
+
+
 
   // main menu function. takes struct vector parameters from the main function.
 fn menu(accounts: &mut Vec<Account>, current_id: &mut Vec<BasicAccountMembers>) {
